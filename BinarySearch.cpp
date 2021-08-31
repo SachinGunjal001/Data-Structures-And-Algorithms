@@ -28,9 +28,10 @@ int main(){
     int arr[] = {1,3,5,56,64,73,123,225,444};
     int size = sizeof(arr)/sizeof(int);
     int element;
-    cout<< "enter the eloement from given array: ";
+    cout<< "enter the element from given array: ";
     cin>>element;
     int searchIndex = binarySearch(arr, size, element);
     cout<< element<<" is at position of index " << searchIndex;
     return 0;
 }
+
