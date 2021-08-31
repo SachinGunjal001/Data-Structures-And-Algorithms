@@ -26,3 +26,4 @@ int main(){
     cout<< element<<" is at position of index " << searchIndex;
     return 0;
 }
+
