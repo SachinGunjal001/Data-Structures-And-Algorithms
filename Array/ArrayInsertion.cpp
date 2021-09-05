@@ -20,13 +20,20 @@ int indInsertion(int arr[], int size, int element, int capacity, int index){
 }
 
 int main(){
-    int arr[100] = {7, 8, 12, 27, 88};
-    int size = 5, index=1; int element;
-    display(arr, size);
+    int n;
+    cout<<"Enter number of element you like to add in array: ";
+    cin>>n;
+    int arr[n];
+    for(int i =0; i < n; i++){
+    cin>>arr[i];
+    }
+
+    int index=1; int element;
+    display(arr, n);
     cout<<"\nenter the element: ";
     cin>>element;
-    indInsertion(arr, size, element, 100, index);
-    size +=1;
-    display(arr, size);
+    indInsertion(arr, n, element, 100, index);
+    n +=1;
+    display(arr, n);
     return 0;
 }
