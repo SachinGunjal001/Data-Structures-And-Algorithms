@@ -25,12 +25,18 @@ int binarySearch(int arr[], int size, int element){
 int main(){
 
     // Sorted array for binary search
-    int arr[] = {1,3,5,56,64,73,123,225,444};
-    int size = sizeof(arr)/sizeof(int);
-    int element;
+    int n,element;
+    cout<<"size of array is: ";
+    cin >> n;
+    int arr[n];
+    cout<<"\nEnter sorted element in an array: ";
+    for(int i = 0; i < n; i++){
+        cin>>arr[i];
+    }
+    
     cout<< "enter the element from given array: ";
     cin>>element;
-    int searchIndex = binarySearch(arr, size, element);
+    int searchIndex = binarySearch(arr, n,element);
     cout<< element<<" is at position of index " << searchIndex;
     return 0;
 }

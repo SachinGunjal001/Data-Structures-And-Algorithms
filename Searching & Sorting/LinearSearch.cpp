@@ -17,12 +17,18 @@ int linearSearch(int arr[], int size, int element){
 
 int main(){
     // Unsorted array for linear search
-    int arr[] = {1,3,5,56,4,3,23,5,4,54,634,56,34};
-    int size = sizeof(arr)/sizeof(int);
+    int n,element;
+    cout<<"size of array is: ";
+    cin >> n;
+    int arr[n];
+    cout<<"\nEnter sorted element in an array: ";
+    for(int i = 0; i < n; i++){
+        cin>>arr[i];
+    }
     int element;
     cout<< "enter the element from given array: ";
     cin>>element;
-    int searchIndex = linearSearch(arr, size, element);
+    int searchIndex = linearSearch(arr, n,element);
     cout<< element<<" is at position of index " << searchIndex;
     return 0;
 }
